@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 50px 0px;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+
+.box{
+ width: 1600px  ;
+ height: 800px ;
+ margin:0 auto ;
+ overflow: hidden;
+ justify-content: center;
+ display: flex;
+ background: rgb(226, 224, 224);
+ position: relative;
+ border-radius: 10px;
+}
+
+.image-container {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    grid-gap: 20px;
+    padding: 30px;
+    animation:loop 20s linear infinite ;
+    /* animation:bannermove 20s linear infinite ; */
+}
+
+.image-container:hover{
+    animation-play-state: paused;
+}
+
+  
+
+  
+img {
+    max-height: 700px;
+    height: auto;
+    width: auto;
+    margin-right: 25px;
+
+}
+
+
+/*for animation */
+@keyframes loop {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+/* @keyframes bannermove {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-100%, 0);
+        }
+    } */
